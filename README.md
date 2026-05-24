@@ -20,9 +20,10 @@ Hi, I'm **Urszula** — an AI automation specialist building Claude Skills in Po
 
 ## 📦 Skills
 
-| Skill | PL | EN | Opis / Description |
-|---|---|---|---|
-| [wytlumacz](./skills/wytlumacz/) | ✅ | ✅ | Wyjaśnia pojęcia z AI, biznesu, marketingu — przez analogie i przykłady / Explains concepts via analogies & examples |
+| Skill | Lang | Opis / Description |
+|---|---|---|
+| [wytlumacz](./skills/wytlumacz/) | 🇵🇱 PL | Wyjaśnia pojęcia z AI, biznesu, marketingu — przez analogie i przykłady |
+| [explainer](./skills/explainer/) | 🇬🇧 EN | Explains concepts from AI, business, marketing — via analogies & examples |
 
 > Więcej skillów wkrótce. More skills coming soon.
 
@@ -33,25 +34,24 @@ Hi, I'm **Urszula** — an AI automation specialist building Claude Skills in Po
 ### Instalacja w Claude Code / Install in Claude Code
 
 ```bash
-# Skopiuj folder wybranego skilla do swojego projektu
-# Copy the skill folder to your project
-
+# Polski skill / Polish skill:
 cp -r skills/wytlumacz /your-project/.claude/skills/
+
+# Angielski skill / English skill:
+cp -r skills/explainer /your-project/.claude/skills/
 ```
 
-Następnie w pliku `CLAUDE.md` lub jako system prompt dodaj zawartość `SKILL.md`.
-
-Then reference the `SKILL.md` content in your `CLAUDE.md` or system prompt.
+Następnie dodaj zawartość `SKILL.md` do swojego `CLAUDE.md` lub system prompt.
+Then add the `SKILL.md` content to your `CLAUDE.md` or system prompt.
 
 ### Struktura / Structure
 
 ```
 skills/
-└── wytlumacz/
-    ├── pl/
-    │   └── SKILL.md        # Wersja polska
-    └── en/
-        └── SKILL.md        # English version
+├── wytlumacz/
+│   └── SKILL.md    # 🇵🇱 Polski
+└── explainer/
+    └── SKILL.md    # 🇬🇧 English
 ```
 
 ---
